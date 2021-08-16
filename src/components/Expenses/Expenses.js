@@ -1,11 +1,11 @@
-import ExpenseItem from "./ExpenseItem";
-import e from "./Expenses.css";
 
-const Expenses=(props)=>{
+import ExpenseItem from "./ExpenseItem";
+
+const Expenses = (props) => {
 
     return (
         <div className="expenses">
-            <h1>lets get started</h1>
+            <h1>Let's get started!</h1>
             <ExpenseItem
                 title={props.expenses[0].title}
                 amount={props.expenses[0].amount}
