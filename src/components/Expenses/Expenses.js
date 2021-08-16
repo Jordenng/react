@@ -1,10 +1,10 @@
 import ExpenseItem from "./ExpenseItem";
 import e from "./Expenses.css";
 
-function Expenses(props){
+const Expenses=(props)=>{
 
     return (
-        <div className="e">
+        <div className="expenses">
             <h1>lets get started</h1>
             <ExpenseItem
                 title={props.expenses[0].title}
