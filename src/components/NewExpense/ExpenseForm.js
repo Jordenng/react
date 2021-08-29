@@ -3,16 +3,10 @@ import {useState} from "react";
 
 const ExpenseForm = (props) => {
 
-    // const [userInput, setUserInput]=useState({
-    //     enteredTitle:"",
-    //     enteredAmount:"",
-    //     enteredDate:""
-    // })
     const [enteredDate, setEnteredDate] = useState('')
     const [enteredAmount, setEnteredAmount] = useState('')
     const [enteredTitle, setEnteredTitle] = useState('')
 
-    useState('')
 
     const titleChangedHandler = (event) => {
         // setUserInput((prevState) => {
@@ -38,7 +32,7 @@ const ExpenseForm = (props) => {
             date: new Date(enteredDate)
         }
 
-        props.onSaveExpenseData();
+        props.onSaveExpenseData(expenseData);
         setEnteredTitle('')
         setEnteredAmount('')
         setEnteredDate('')
